@@ -15,7 +15,7 @@ class Easyweb < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.write_exec_script libexec/"bin/easyweb.js"
+    (bin/"easyweb").write_exec_script libexec/"bin/easyweb.js"
   end
 
   test do
