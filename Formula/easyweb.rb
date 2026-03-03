@@ -14,7 +14,8 @@ class Easyweb < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", "-g", "--prefix", prefix, buildpath
+    system "npm", "install", "--prefix", libexec, buildpath
+    bin.install_symlink libexec/"bin/easyweb"
   end
 
   test do
