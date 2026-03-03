@@ -2,14 +2,14 @@
 # frozen_string_literal: true
 
 # Source template for EasyWeb-2.0-Homebrew/Formula/easyweb.rb
-# CI replaces V0.2.17, 0.2.17, 3c7f7586a7910e7eebb060da6c943b8cbfe3b4334765da8427ef013f9edd2b0d and publishes to public Homebrew repo.
+# CI replaces V0.2.18, 0.2.18, c7d38dca3935f4c03c24e9d8bd696c34dd92dd388ec5a0d7df0b4e71ce1480f6 and publishes to public Homebrew repo.
 
 class Easyweb < Formula
   desc "EasyWeb CLI for managing EasyWeb themes and remote editing"
   homepage "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub"
-  url "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub/releases/download/V0.2.17/easyweb-remote-0.2.17.tgz"
-  version "0.2.17"
-  sha256 "3c7f7586a7910e7eebb060da6c943b8cbfe3b4334765da8427ef013f9edd2b0d"
+  url "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub/releases/download/V0.2.18/easyweb-remote-0.2.18.tgz"
+  version "0.2.18"
+  sha256 "c7d38dca3935f4c03c24e9d8bd696c34dd92dd388ec5a0d7df0b4e71ce1480f6"
 
   depends_on "node"
 
