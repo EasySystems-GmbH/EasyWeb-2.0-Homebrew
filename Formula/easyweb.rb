@@ -2,14 +2,14 @@
 # frozen_string_literal: true
 
 # Source template for EasyWeb-2.0-Homebrew/Formula/easyweb.rb
-# CI replaces V0.2.16, 0.2.16, 62ca5e44ff5a14e925d7f9cab2ec656b526b7b5d13656284fe3223b338ae222b and publishes to public Homebrew repo.
+# CI replaces V0.2.17, 0.2.17, 3c7f7586a7910e7eebb060da6c943b8cbfe3b4334765da8427ef013f9edd2b0d and publishes to public Homebrew repo.
 
 class Easyweb < Formula
   desc "EasyWeb CLI for managing EasyWeb themes and remote editing"
   homepage "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub"
-  url "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub/releases/download/V0.2.16/easyweb-remote-0.2.16.tgz"
-  version "0.2.16"
-  sha256 "62ca5e44ff5a14e925d7f9cab2ec656b526b7b5d13656284fe3223b338ae222b"
+  url "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub/releases/download/V0.2.17/easyweb-remote-0.2.17.tgz"
+  version "0.2.17"
+  sha256 "3c7f7586a7910e7eebb060da6c943b8cbfe3b4334765da8427ef013f9edd2b0d"
 
   depends_on "node"
 
@@ -20,5 +20,6 @@ class Easyweb < Formula
 
   test do
     assert_match "EasyWeb CLI", shell_output("#{bin}/easyweb --help", 0)
+    assert_match(/\A\d+\.\d+\.\d+\n\z/, shell_output("#{bin}/easyweb --version", 0))
   end
 end
