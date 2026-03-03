@@ -9,7 +9,7 @@ class Easyweb < Formula
   homepage "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub"
   url "https://github.com/EasySystems-GmbH/EasyWeb-2.0-Hub/releases/download/V0.2.12/easyweb-remote-0.2.12.tgz"
   version "0.2.12"
-  sha256 "12786fa13a171b9a8c71c2e18a77ebebe3e1ab7c39995488aa7ef7a3d44b4f6f"
+  sha256 "6ee63bbda0be3723821ab686a122880bde8875c5e9258bebda8bb4ced45eaec9"
 
   depends_on "node"
 
